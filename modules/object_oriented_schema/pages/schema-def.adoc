@@ -46,7 +46,7 @@ g.commit_changes()
 
 Users can define an entire graph schema in the approach below. Using the Cora dataset example, the schema would look something like this:
 
-```py
+```
 from pyTigerGraph import TigerGraphConnection
 from pyTigerGraph.schema import Graph, Vertex, Edge
 

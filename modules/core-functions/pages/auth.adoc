@@ -75,7 +75,7 @@ See https://docs.tigergraph.com/tigergraph-server/current/user-access/managing-c
 
 
 == getToken()
-`getToken(secret: str, setToken: bool = True, lifetime: int = None) -> tuple`
+`getToken(secret: str = None, setToken: bool = True, lifetime: int = None) -> Union[tuple, str]`
 
 Requests an authorization token.
 
@@ -86,16 +86,19 @@ See https://docs.tigergraph.com/admin/admin-guide/user-access-management/user-pr
 
 [discrete]
 ==== Parameters:
-* `secret`: The secret (string) generated in GSQL using `CREATE SECRET`.
+* `secret (str, Optional)`: The secret (string) generated in GSQL using `CREATE SECRET`.
  +
 See https://docs.tigergraph.com/tigergraph-server/current/user-access/managing-credentials#_create_a_secret[this] for more details.
-* `setToken`: Set the connection's API token to the new value (default: `True`).
-* `lifetime`: Duration of token validity (in seconds, default 30 days = 2,592,000 seconds).
+* `setToken (bool, Optional)`: Set the connection's API token to the new value (default: `True`).
+* `lifetime (int, Optional)`: Duration of token validity (in seconds, default 30 days = 2,592,000 seconds).
 
 [discrete]
 ==== Returns:
-A tuple of `(<token>, <expiration_timestamp_unixtime>, <expiration_timestamp_ISO8601>)`.
-The return value can be ignored. +
+If your TigerGraph instance is running version 3.5 or before, the return value is 
+a tuple of `(<token>, <expiration_timestamp_unixtime>, <expiration_timestamp_ISO8601>)`.
+The return value can be ignored, as the token is automatically set for the connection after this call.
+
+If your TigerGraph instance is running version 3.6 or later, the return value is just the token.
 
 [NOTE]
 The expiration timestamp's time zone might be different from your computer's local time
