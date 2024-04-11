@@ -1,5 +1,12 @@
 = Release Notes
 
+== [1.6] - 2024-04-23
+
+Release of pyTigerGraph version 1.6.
+
+=== Added:
+* xref:pytigergraph:ai:copilot.adoc[TigerGraph CoPilot]. Added a new submodule for interacting with TigerGraph CoPilot, a framework for integrating Generative AI with TigerGraph.
+
 == [1.5] - 2023-09-25
 
 Release of pyTigerGraph version 1.5. 
