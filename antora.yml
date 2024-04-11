@@ -10,6 +10,7 @@ nav:
 - modules/authentication/nav.adoc
 - modules/core-functions/nav.adoc
 - modules/gds/nav.adoc
+- modules/ai/nav.adoc
 - modules/datasets/nav.adoc
 - modules/visualization/nav.adoc
 - modules/object_oriented_schema/nav.adoc
