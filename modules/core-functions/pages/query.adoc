@@ -278,3 +278,51 @@ This argument must be an integer between 1 and 100.
 See xref:tigergraph-server:API:built-in-endpoints.adoc#_show_query_performance[Show query performance]
 
 
+== describeQuery()
+`describeQuery(queryName: str, queryDescription: str, parameterDescriptions: dict)`
+
+Add a query description and parameter descriptions.
+
+[discrete]
+==== Parameters:
+* `queryName`: The name of the query to describe.
+* `queryDescription`: A description of the query.
+* `parameterDescriptions (optional)`: A dictionary of parameter descriptions. The keys are the parameter names and the values are the descriptions.
+
+[discrete]
+==== Returns:
+The response from the database.
+
+
+== getQueryDescription()
+`getQueryDescription(queryName = "all")`
+
+Get the description of a query.
+
+[discrete]
+==== Parameter:
+* `queryName`: The name of the query to get the description of. 
+If multiple query descriptions are desired, pass a list of query names.
+If set to "all", returns the description of all queries.
+
+[discrete]
+==== Returns:
+The description of the query(ies).
+
+
+== dropQueryDescription()
+`dropQueryDescription(queryName: str, dropParamDescriptions: bool = True)`
+
+Drop the description of a query.
+
+[discrete]
+==== Parameters:
+* `queryName`: The name of the query to drop the description of.
+If set to "*", drops the description of all queries.
+* `dropParamDescriptions`: Whether to drop the parameter descriptions as well. Defaults to True.
+
+[discrete]
+==== Returns:
+The response from the database.
+
+

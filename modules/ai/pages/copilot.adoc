@@ -31,6 +31,33 @@ Register a custom query with the InquiryAI service.
 Hash of query that was registered.
 
 
+== updateCustomQuery()
+`updateCustomQuery(function_header: str, description: str, docstring: str, param_types: dict)`
+
+Update a custom query with the InquiryAI service.
+[discrete]
+==== Parameters:
+* `function_header (str)`: The name of the query being updated.
+* `description (str)`: The high-level description of the query being updated.
+* `docstring (str)`: The docstring of the query being updated. Includes information about each parameter.
+* `param_types (Dict[str, str])`: The types of the parameters. In the format {"param_name": "param_type"}
+[discrete]
+==== Returns:
+Hash of query that was updated.
+
+
+== deleteCustomQuery()
+`deleteCustomQuery(function_header: str)`
+
+Delete a custom query with the InquiryAI service.
+[discrete]
+==== Parameter:
+* `function_header (str)`: The name of the query being deleted.
+[discrete]
+==== Returns:
+Hash of query that was deleted.
+
+
 == retrieveDocs()
 `retrieveDocs(query: str, top_k: int = 3)`
 
