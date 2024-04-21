@@ -281,7 +281,7 @@ See xref:tigergraph-server:API:built-in-endpoints.adoc#_show_query_performance[S
 == describeQuery()
 `describeQuery(queryName: str, queryDescription: str, parameterDescriptions: dict)`
 
-Add a query description and parameter descriptions.
+Add a query description and parameter descriptions. Only supported on versions of TigerGraph >= 4.0.0.
 
 [discrete]
 ==== Parameters:
@@ -297,7 +297,7 @@ The response from the database.
 == getQueryDescription()
 `getQueryDescription(queryName = "all")`
 
-Get the description of a query.
+Get the description of a query. Only supported on versions of TigerGraph >= 4.0.0.
 
 [discrete]
 ==== Parameter:
@@ -313,12 +313,12 @@ The description of the query(ies).
 == dropQueryDescription()
 `dropQueryDescription(queryName: str, dropParamDescriptions: bool = True)`
 
-Drop the description of a query.
+Drop the description of a query. Only supported on versions of TigerGraph >= 4.0.0.
 
 [discrete]
 ==== Parameters:
 * `queryName`: The name of the query to drop the description of.
-If set to "*", drops the description of all queries.
+If set to "&#42;", drops the description of all queries.
 * `dropParamDescriptions`: Whether to drop the parameter descriptions as well. Defaults to True.
 
 [discrete]
