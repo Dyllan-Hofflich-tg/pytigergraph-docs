@@ -46,7 +46,7 @@ Method to configure the request header.
 
 [discrete]
 ==== Parameters:
-* `tiemout (int, optional)`: The timeout value desired in milliseconds. Defaults to 16,000 ms (16 sec)
+* `timeout (int, optional)`: The timeout value desired in milliseconds. Defaults to 16,000 ms (16 sec)
 * `responseSize`: The size of the response in bytes. Defaults to 3.2E7 bytes (32 MB).
 
 [discrete]
