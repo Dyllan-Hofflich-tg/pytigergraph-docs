@@ -1,4 +1,4 @@
-= Release Notes
+= pyTigerGraph Release Notes
 
 == [1.6] - 2024-04-30
 

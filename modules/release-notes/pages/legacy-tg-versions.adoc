@@ -5,7 +5,7 @@ This page lists all LTS (Long-Term Support) and previous versions of pyTigerGrap
 
 == LTS Versions
 
-* xref:pytigergraph:intro:index.adoc[1.5]
+* xref:1.5@pytigergraph:intro:index.adoc[1.5]
 
 == Other Versions
 
