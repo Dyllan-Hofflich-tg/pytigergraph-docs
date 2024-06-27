@@ -14,7 +14,7 @@ conn = tg.TigerGraphConnection(host="HOSTNAME_HERE", username="USERNAME_HERE", p
 
 conn.getToken()
 
-feat = tg.gds.featurizer()
+feat = conn.gds.featurizer()
 
 res = feat.runAlgorithm("tg_pagerank", params={"v_type": "Paper", "e_type": "CITES"})
 print(res)
