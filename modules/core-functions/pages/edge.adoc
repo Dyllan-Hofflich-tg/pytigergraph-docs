@@ -266,7 +266,7 @@ Example:
         {"visits": (1482, "+"), "max_duration": (371, "max")}
 ----
 
-For valid values of `<operator>` see https://docs.tigergraph.com/dev/restpp-api/built-in-endpoints#operation-codes[this] .
+For valid values of `<operator>` see xref:tigergraph-server:api:upsert-rest#_operation_codes[Upsert > Operation Codes] .
 
 [discrete]
 ==== Returns:
@@ -276,7 +276,7 @@ A single number of accepted (successfully upserted) edges (0 or 1).
 ==== Endpoint:
 - `POST /graph/{graph_name}`
  +
-See https://docs.tigergraph.com/dev/restpp-api/built-in-endpoints#upsert-data-to-graph[this] for more details.
+See xref:tigergraph-server:api:upsert-rest[Upsert data to graph] for more details.
 
 
 
