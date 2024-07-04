@@ -276,7 +276,7 @@ A single number of accepted (successfully upserted) edges (0 or 1).
 ==== Endpoint:
 - `POST /graph/{graph_name}`
  +
-See xref:tigergraph-server:API:upsert-rest[Upsert data to graph] for more details.
+See xref:tigergraph-server:API:upsert-rest.adoc[Upsert data to graph] for more details.
 
 
 
@@ -313,7 +313,7 @@ Example:
         ]
 ----
 
-For valid values of `<operator>` see xref:tigergraph-server:API:upsert-rest.adoc#operation-codes[Upsert > Operation Codes] .
+For valid values of `<operator>` see xref:tigergraph-server:API:upsert-rest.adoc#_operation_codes[Upsert > Operation Codes] .
 
 [discrete]
 ==== Returns:
